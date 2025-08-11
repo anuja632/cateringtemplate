@@ -31,11 +31,12 @@
       color: white;
       font-family: 'Poppins', sans-serif;
       min-height: 50vh;
+      overflow-x: hidden;
     }
 
     .overlay {
       background: rgba(0, 0, 0, 0.7); /* stronger overlay for better contrast */
-      padding: 50px 0;
+      /* padding: 50px 0; */
       min-height: 50vh;
     }
 
@@ -104,6 +105,54 @@
   border-radius: 10px;
   display: block;
 }
+/* Responsive Contact Page Styling */
+@media (max-width: 992px) {
+  .Contactmain {
+    min-height: auto;
+    /* padding: 40px 15px; */
+  }
+/*   
+  .overlay {
+    padding: 30px 15px;
+  } */
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info i {
+    font-size: 24px;
+  }
+
+  .map-iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  h5 {
+    font-size: 18px;
+  }
+  
+  .form-control {
+    font-size: 14px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+  }
+  
+  .contact-info {
+    font-size: 14px;
+    padding: 15px;
+  }
+  
+  .map-iframe {
+    height: 200px;
+  }
+}
+
   </style>
 
 
@@ -156,79 +205,102 @@
 <section class="about-banner">
   <div class="container">
     <div class="banner-content">
-      <div class="subtitle"><span>About Us</span></div>
-      <h2>Passion for Catering Excellence</h2>
+      <div class="subtitle"><span>Contact Us</span></div>
+      <h2>We’re Here to Make Your Event Unforgettable</h2>
       <div class="text">
-        With years of experience in the culinary world, we bring flavor, style, and service to every event. From intimate gatherings to grand celebrations, our team delivers unforgettable experiences.
+        Have questions or ready to start planning? Our team is just a message away.  
+        Reach out to discuss your event, request a quote, or learn more about our catering services.
       </div>
-      <a href="services.html" class="btn-primary">Explore Our Services</a>
+      <a href="mailto:info@yourcatering.com" class="btn-primary">Get in Touch</a>
     </div>
   </div>
 </section>
-  <div class="Contactmain">
-    <div class="overlay">
-      <div class="container">
-        <div class="row">
-          <!-- Contact Form -->
-          <div class="col-md-6 mb-4">
-            <form>
-              <div class="row mb-3">
-                <div class="col">
-                  <input type="email" class="form-control" placeholder="Email" required />
-                </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Name" required />
-                </div>
+<div class="Contactmain">
+  <div class="overlay">
+    <!-- Top Shape -->
+    <img src="http://roobascatering.com/assets/images/section-shape-img1.png" 
+         alt="Top Decorative Shape" class="img-fluid d-block mx-auto mb-4 menu-shape-top">
+
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <h3 class="expertise-title">Get in Touch</h3>
+        <h2 class="expertise-subtitle">We’re Here to Help</h2>
+        <p class="expertises-texts">
+          Have questions or need a custom catering quote?<br>
+          Our friendly team is ready to assist you every step of the way.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Email" required>
               </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Address" />
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Name" required>
               </div>
-              <div class="mb-3">
+              <div class="col-12">
+                <input type="text" class="form-control" placeholder="Address">
+              </div>
+              <div class="col-12">
                 <textarea class="form-control" placeholder="Message" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn submit-btn">Submit</button>
-            </form>
-          </div>
+              <div class="col-12">
+                <button type="submit" class="btn submit-btn w-100">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
 
-          <!-- Contact Information -->
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="contact-info text-center">
-                  <i class="bi bi-geo-alt-fill"></i>
-                  <h5>OUR MAIN OFFICE</h5>
-                  <p>Bangalore, Dubai</p>
-                </div>
+        <!-- Contact Information -->
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="contact-info text-center h-100">
+                <i class="bi bi-geo-alt-fill"></i>
+                <h5>OUR MAIN OFFICE</h5>
+                <p>Bangalore, Dubai</p>
               </div>
-              <div class="col-md-6">
-                <div class="contact-info text-center">
-                  <i class="bi bi-telephone-fill"></i>
-                  <h5>PHONE NUMBER</h5>
-                  <p tel=" +91 70948 58696">: +91 70948 58696</p>
-                </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="contact-info text-center h-100">
+                <i class="bi bi-telephone-fill"></i>
+                <h5>PHONE NUMBER</h5>
+                <p>+91 70948 58696</p>
               </div>
-              <div class="col-md-6">
-                <div class="contact-info text-center">
-                  <i class="bi bi-printer-fill"></i>
-                  <h5>FAX</h5>
-                  <p>1-234-567-8900</p>
-                </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="contact-info text-center h-100">
+                <i class="bi bi-printer-fill"></i>
+                <h5>FAX</h5>
+                <p>1-234-567-8900</p>
               </div>
-              <div class="col-md-6">
-                <div class="contact-info text-center">
-                  <i class="bi bi-envelope-fill"></i>
-                  <h5>EMAIL</h5>
-  <p><a href="mailto:puzzle@diplomats.co.in " style="color:white">puzzle@diplomats.co.in</a></p>
-                </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="contact-info text-center h-100">
+                <i class="bi bi-envelope-fill"></i>
+                <h5>EMAIL</h5>
+                <p>
+                  <a href="mailto:puzzle@diplomats.co.in" style="color:white">
+                    puzzle@diplomats.co.in
+                  </a>
+                </p>
               </div>
-  
             </div>
           </div>
-
         </div>
       </div>
     </div>
+
+    <!-- Bottom Shape -->
+    <img src="http://roobascatering.com/assets/images/section-shape-img1.png" 
+         alt="Bottom Decorative Shape" class="img-fluid d-block mx-auto mt-4 menu-bottom-shape">
   </div>
+</div>
+
   <iframe
     class="map-iframe"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5927265280537!2d77.59456221515169!3d12.971598290846764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670a7ea9513%3A0xe33d3dd978d3f3ff!2sBangalore%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1691567891234!5m2!1sen!2sus"

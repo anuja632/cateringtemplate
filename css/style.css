@@ -49,7 +49,7 @@
     }
     .expertise-texts {
       font-family: 'Poppins', sans-serif;
-      color: #000;
+      color: #fff;
       max-width: 800px;
       margin: 10px auto 0;
     }
@@ -126,19 +126,40 @@
 
        
 .menu {
+  position: relative;
   background-image: url("http://roobascatering.com/assets/images/img59.jpg");
   background-size: cover;
   background-position: center;
   color: white;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .overlay {
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(8px);
+  width:100%;
+  height:100%;
   min-height: 100vh;
-  padding-top: 30px;
-  padding-bottom: 30px;
+
+}
+
+.menu-shape {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  pointer-events: none; /* makes it unclickable */
+}
+
+.menu-shape-top {
+  top: 0;
+  transform: rotate(180deg); /* flip so it faces down */
+  height:80px;
+}
+
+.menu-shape-bottom {
+  bottom: 0;
+    height:100px;
 }
 
 h2 {
@@ -378,8 +399,9 @@ a{
 }
 
 .why-choose-section p.description {
-  color: #333;
+  color: black;
   margin-top: 15px;
+  text-align: justify;
 }
 
 .why-choose-section h5 {
@@ -995,7 +1017,7 @@ height:300px;
 .about-banner {
   position: relative;
   background: url('https://img.freepik.com/free-photo/top-view-yummy-cutlets-with-onion-rings-grey-background-dish-meat-meal-photo_140725-47087.jpg?uid=R208066470&ga=GA1.1.1679070017.1753435898&semt=ais_hybrid&w=740&q=80') center/cover no-repeat;
-  padding: 100px 0;
+  padding: 150px 0;
   color: #fff;
   overflow: hidden;
 }
@@ -1076,7 +1098,7 @@ height:300px;
       width: 100%;
       border-radius: 12px;
       object-fit: cover;
-      height: 400px;
+      height: 550px;
     }
 
     .section-heading {
@@ -1097,6 +1119,42 @@ height:300px;
       color: black;
       margin-bottom: 15px;
     }
+    
+	.home-about {
+		padding: 90px 0 0px;
+	}
+
+	.home-about-left {
+		text-align: center;
+	}
+
+	.home-about-left .home-about-img {
+		width: 90%;
+	}
+.home-about-left .home-about-img figure {
+    height:auto;
+}
+	.home-about-left .home-about-since {
+		width: 180px;
+		height: 180px;
+		transform: translate(10px, -70px);
+	}
+
+	.home-about-since h3 {
+		font-size: 22px;
+	}
+.aa  .row{
+gap:15px !important;
+}
+	.home-about-since h2 {
+		font-size: 42px;
+	}
+
+	.home-about-right {
+		padding-top: 0px;
+		padding-left: 0;
+	}
+
 
     .signature {
       /* font-family: 'Brush Script MT', cursive; */
@@ -1163,9 +1221,9 @@ height:300px;
 
 
     .team-card {
-      background-color: var(--background-color);
+      background-color: #fff;
       border-radius: 30px;
-      margin-bottom: 30px;
+      /* margin-bottom: 30px; */
       overflow: hidden;
       height: 100%;
       display: flex;
@@ -1191,7 +1249,7 @@ height:300px;
       font-weight: bold;
       text-transform: uppercase;
       color: #fff;
-      background-color:#951F44;
+      background-color:#082932;
       display: inline-block;
       padding: 10px 20px;
       border-radius: 5px;
@@ -1506,5 +1564,92 @@ height:300px;
     padding: 152px 0;
     color: #fff;
     overflow: hidden;
+}
+.event-card img
+ {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+}
+/* Default: 1 column on mobile, 2 columns on tablets */
+.custom-lg-3 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media (min-width: 576px) {
+  .custom-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* At exactly 1024px and above → 4 columns */
+@media (min-width: 1024px) {
+  .custom-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .dish-card h4 {
+    color: #082932;
+    transition: color 0.3s ease;
+    font-size: 18px;
+}
+.expertise-subtitles {
+    font-family: 'Playfair Display', serif;
+    color: #082932;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 22px;
+}
+}
+
+
+@media(max-width:1280px){
+  .about-banner {
+    position: relative;
+    background: url(https://img.freepik.com/free-photo/top-view-yummy-cutlets-with-onion-rings-grey-background-dish-meat-meal-photo_140725-47087.jpg?uid=R208066470&ga=GA1.1.1679070017.1753435898&semt=ais_hybrid&w=740&q=80) center / cover no-repeat;
+    padding: 150px 0;
+    color: #fff;
+    overflow: hidden;
+}
+}
+
+@media (max-width: 768px) {
+    .dish-img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        border: 3px solid #ffce53;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    .dish-card h5{
+      font-size: 19px;
+    }
+    .intro-section {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    padding: 50px;
+}
+    .event-card img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .dish-card h4 {
+    color: #082932;
+    transition: color 0.3s ease;
+    font-size: 17px;
 }
 }
