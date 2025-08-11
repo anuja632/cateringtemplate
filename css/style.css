@@ -1076,6 +1076,7 @@ height:300px;
       width: 100%;
       border-radius: 12px;
       object-fit: cover;
+      height: 400px;
     }
 
     .section-heading {
@@ -1477,4 +1478,33 @@ height:300px;
 
 .desBtn:active {
   transform: scale(0.95);
+}
+.our-story-section p{
+  text-align: justify;
+}
+
+
+
+@media (max-width:1080px){
+  .header-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.dish-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #ffce53;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+.about-banner {
+    position: relative;
+    background: url(https://img.freepik.com/free-photo/top-view-yummy-cutlets-with-onion-rings-grey-background-dish-meat-meal-photo_140725-47087.jpg?uid=R208066470&ga=GA1.1.1679070017.1753435898&semt=ais_hybrid&w=740&q=80) center / cover no-repeat;
+    padding: 152px 0;
+    color: #fff;
+    overflow: hidden;
+}
 }
