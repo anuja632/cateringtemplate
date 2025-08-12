@@ -925,22 +925,25 @@ height:300px;
   letter-spacing: 0.1em;
   color: white;
 }
-
 /* Main Container */
 #booking-form-section {
-  background-color:#082932;
-  width:100%; 
+  background-color: #082932;
+  width: 100%;
   margin-top: 10px;
-  padding: 10%;
+  padding: 40px; /* fixed spacing */
   border-radius: 10px;
   backdrop-filter: blur(5px); /* frosted-glass effect */
+}
+
+/* Center content vertically + horizontally */
+#booking-form-section .row {
+  align-items: center;
+  justify-content: center;
 }
 
 /* Form Fields */
 #booking-form-section input,
 #booking-form-section textarea {
-  /* background-color: rgba(255, 255, 255, 0.05); */
-  /* color: #fff; */
   border: 1px solid #ccc;
   border-radius: 0;
   padding: 12px;
@@ -950,15 +953,9 @@ height:300px;
 /* On focus: highlight field */
 #booking-form-section input:focus,
 #booking-form-section textarea:focus {
-  border-color:#E9B472;
+  border-color: #E9B472;
   outline: none;
 }
-
-/* Placeholder Text */
-/* #booking-form-section input::placeholder,
-#booking-form-section textarea::placeholder {
-  color: #ccc;
-} */
 
 /* Submit Button */
 #booking-form-section button {
@@ -973,6 +970,7 @@ height:300px;
   background-color: #fff;
   color: #000;
 }
+
 .catering-section {
   background-image: url('http://roobascatering.com/assets/images/img6.jpg');
   background-size: cover;
@@ -1847,8 +1845,8 @@ gap:15px !important;
     font-size: 18px !important;
 }
 }
-@media(max-width:450px){
+/* @media(max-width:450px){
     #Aq{
     margin-left: 10px !important;
   }
-}
+} */
