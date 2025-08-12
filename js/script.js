@@ -7,7 +7,7 @@ const images = [
 ];
 
 const config = {
-  slidesToShow: window.innerWidth <= 768 ? 1 : 5,
+  slidesToShow: window.innerWidth <= 768 ? 5 : 5,
   centerMode: true,
   gap: 20,
 };
@@ -152,7 +152,7 @@ function bindEvents() {
 
   window.addEventListener('resize', () => {
     isMobile = window.innerWidth <= 768;
-    config.slidesToShow = isMobile ? 1 : 5;
+    config.slidesToShow = isMobile ? 5 : 5;
     calculateWidths();
     applyWidths();
     updateSlider(false);

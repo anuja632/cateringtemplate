@@ -20,19 +20,27 @@
 </head>
 <body>
   <!-- Header -->
+  <!-- Header -->
   <header class="custom-header">
     <div class="header-container">
 
-      <!-- Logo floating left -->
-      <div class="logo-wrapper">
-        <img src="https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148987940.jpg?t=st=1754563959~exp=1754567559~hmac=ba4b5e77e61e2d8df71aa08d9b336e97406480d29562c884d5a1b794af65de12&w=1480" alt="Fusion Logo" class="logo">
-      </div>
+ <!-- Mobile: Logo + Toggle -->
+<div class="d-flex justify-content-between align-items-center bg-white p-2 d-lg-none">
+  <div class="logo-wrapper-mobile">
+    <img src="https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148987940.jpg" 
+         alt="Fusion Logo" class="logo">
+  </div>
+  <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+    <i class="fas fa-bars toggle-icon"></i>
+  </button>
+</div>
 
-      <!-- Top Bar -->
-      <div class="top-bar">
+
+      <!-- Top Bar (desktop only) -->
+      <div class="top-bar d-none d-lg-flex justify-content-between align-items-center px-3 py-1">
         <div class="left-info">
-          <a href="mailto:sales@fusionfoods.co"><i class="fas fa-envelope"></i>sales@fusionfoods.co</a>
-          <a href="tel:+919840096365"><i class="fas fa-phone"></i>+91 98400 96365</a>
+          <a href="mailto:sales@fusionfoods.co"><i class="fas fa-envelope"></i> sales@foods.co</a>
+          <a href="tel:+917094858696"><i class="fas fa-phone"></i> +91 70948 58696</a>
         </div>
         <div class="social-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -42,26 +50,61 @@
         </div>
       </div>
 
-      <!-- Navigation Bar -->
-      <nav class="navbar navbar-expand-lg main-navbar">
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <!-- Desktop Logo -->
+      <div class="logo-wrapper d-none d-lg-block">
+        <img src="https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148987940.jpg" 
+             alt="Fusion Logo" class="logo">
+      </div>
+
+      <!-- Desktop Navbar -->
+      <nav class="navbar navbar-expand-lg main-navbar d-none d-lg-flex">
+        <div class="collapse navbar-collapse justify-content-center">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>
 
+      <!-- Offcanvas Mobile Menu -->
+      <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+          <!-- Menu links -->
+          <ul class="navbar-nav mb-4">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Top bar content at bottom -->
+          <div class="mt-auto offcanvas-footer">
+            <div class="left-info mb-2">
+              <a href="mailto:sales@fusionfoods.co"><i class="fas fa-envelope"></i> sales@foods.co</a><br>
+              <a href="tel:+917094858696"><i class="fas fa-phone"></i> +91 70948 58696</a>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fas fa-times"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-
-    
   </header>
-
 <section class="about-banner">
   <div class="container">
     <div class="banner-content">

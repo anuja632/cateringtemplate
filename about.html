@@ -23,16 +23,23 @@
   <header class="custom-header">
     <div class="header-container">
 
-      <!-- Logo floating left -->
-      <div class="logo-wrapper">
-        <img src="https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148987940.jpg?t=st=1754563959~exp=1754567559~hmac=ba4b5e77e61e2d8df71aa08d9b336e97406480d29562c884d5a1b794af65de12&w=1480" alt="Fusion Logo" class="logo">
-      </div>
+ <!-- Mobile: Logo + Toggle -->
+<div class="d-flex justify-content-between align-items-center bg-white p-2 d-lg-none">
+  <div class="logo-wrapper-mobile">
+    <img src="https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148987940.jpg" 
+         alt="Fusion Logo" class="logo">
+  </div>
+  <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+    <i class="fas fa-bars toggle-icon"></i>
+  </button>
+</div>
 
-      <!-- Top Bar -->
-      <div class="top-bar">
+
+      <!-- Top Bar (desktop only) -->
+      <div class="top-bar d-none d-lg-flex justify-content-between align-items-center px-3 py-1">
         <div class="left-info">
-          <a href="mailto:sales@fusionfoods.co"><i class="fas fa-envelope"></i>sales@fusionfoods.co</a>
-          <a href="tel:+919840096365"><i class="fas fa-phone"></i>+91 98400 96365</a>
+          <a href="mailto:sales@fusionfoods.co"><i class="fas fa-envelope"></i> sales@foods.co</a>
+          <a href="tel:+917094858696"><i class="fas fa-phone"></i> +91 70948 58696</a>
         </div>
         <div class="social-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -42,24 +49,60 @@
         </div>
       </div>
 
-      <!-- Navigation Bar -->
-      <nav class="navbar navbar-expand-lg main-navbar">
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <!-- Desktop Logo -->
+      <div class="logo-wrapper d-none d-lg-block">
+        <img src="https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148987940.jpg" 
+             alt="Fusion Logo" class="logo">
+      </div>
+
+      <!-- Desktop Navbar -->
+      <nav class="navbar navbar-expand-lg main-navbar d-none d-lg-flex">
+        <div class="collapse navbar-collapse justify-content-center">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>
 
-    </div>
+      <!-- Offcanvas Mobile Menu -->
+      <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+          <!-- Menu links -->
+          <ul class="navbar-nav mb-4">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
 
-    
+          <!-- Top bar content at bottom -->
+          <div class="mt-auto offcanvas-footer">
+            <div class="left-info mb-2">
+              <a href="mailto:sales@fusionfoods.co"><i class="fas fa-envelope"></i> sales@foods.co</a><br>
+              <a href="tel:+917094858696"><i class="fas fa-phone"></i> +91 70948 58696</a>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fas fa-times"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </header>
 
 <section class="about-banner">
@@ -80,7 +123,7 @@
       <div class="row about-box align-items-center">
         
         <!-- Left Side Image -->
-        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 about-left">
+        <div class="col-lg-6 col-md-12 mb-lg-0 about-left">
           <img src="https://t3.ftcdn.net/jpg/13/63/01/76/360_F_1363017691_tzEPQ8FEYq2beUDxv9thMvmR7z3MUANI.jpg" alt="Table Setup">
         </div>
 <!-- Right Side Content -->
@@ -98,7 +141,7 @@
     Today, over 200+ businesses around the world trust us as their partner for growth. We believe every project is more than just work — it’s an opportunity to build meaningful relationships and create success stories worth telling.
   </p>
   
-  <div class="signature">David Parker</div>
+  <!-- <div class="signature">David Parker</div> -->
   <div class="director-name">David Parker</div>
   <div class="director-role">Managing Director</div>
   
@@ -116,7 +159,7 @@
 
 
 <div class="home-abouts" id="home-about">
-		<div class="container mt-5">
+		<div class="container ">
 			<div class="row">
 				
 
@@ -130,12 +173,13 @@
                 Exquisite cuisine
               </div>
 							<!-- <h2 class="text-anime">Indulge in a celebration with great food!</h2> -->
-						<h2 class="expertise-subtitles">A Trusted Name in Quality Catering Services</h2></div>
+						<h2 class="expertise-subtitles">A Trusted Name in Quality Catering Services</h2>
+          </div>
 						<!-- Section Ttile Start -->
 
 						<div class="home-about-content wow fadeInUp" data-wow-delay="0.75s">
 <p>
-  As a reliable name in the catering industry, we’ve successfully delivered events of every scale — indoors and outdoors. Our experienced team ensures smooth coordination and flawless execution, tailored to your needs.
+  As a reliable name in the catering industry, we’ve successfully delivered events of every scale-indoors and outdoors. Our experienced team ensures smooth coordination and flawless execution, tailored to your needs.
   From the first course to the final dessert, we’re here to serve excellence, creativity, and professionalism that you and your guests will always remember.
 </p>
 						</div>
@@ -152,7 +196,7 @@
 						<div class="home-about-img">
 							
 							
-								<img  src="https://media.istockphoto.com/id/1332612615/photo/shot-of-an-unrecognisable-man-preparing-a-delicious-meal-at-home.jpg?s=612x612&w=0&k=20&c=49uEPK1bRElKNER1LsMScrWWrL0-iAt42rlqnWFO3v0=" alt="" width="555px">
+								<img  src="https://media.istockphoto.com/id/1332612615/photo/shot-of-an-unrecognisable-man-preparing-a-delicious-meal-at-home.jpg?s=612x612&w=0&k=20&c=49uEPK1bRElKNER1LsMScrWWrL0-iAt42rlqnWFO3v0=" alt=""  class="aboutsimg">
 								
 							
 								
